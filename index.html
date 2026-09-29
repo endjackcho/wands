@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>WANDS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&family=Vazirmatn:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="count">
+      <nav>
+        <div class="logo">WANDS</div>
+        <input type="checkbox" id="active" />
+        <label for="active" class="open">
+          <i class="bx bx-menu"></i>
+        </label>
+        <ul>
+          <label for="active" class="close">
+            <i class="bx bx-x"></i>
+          </label>
+          <li>
+            <a href="#about" data-en="About" data-fa="درباره ما">About</a>
+          </li>
+          <li><a href="#team" data-en="Team" data-fa="تیم">Team</a></li>
+          <li>
+            <a href="#projects" data-en="Projects" data-fa="پروژه‌ها"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#" data-en="Contact" data-fa="ارتباط با ما">Contact</a>
+          </li>
+          <label for="active" class="screen"></label>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="lang-btn" id="langBtn" aria-label="Toggle language">
+          FA / EN
+        </button>
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
+          🌙
+        </button>
+      </div>
+
+      <div class="sweep" id="sweep"></div>
+
+      <div class="language-transition">
+        <div class="language-loader">
+          <p>WANDS</p>
+        </div>
+      </div>
+
+      <section class="hero">
+        <div class="sky-layers" id="skyLayers">
+          <div class="stars" id="stars"></div>
+          <div class="cloud c1"></div>
+          <div class="cloud c2"></div>
+          <div class="cloud c3"></div>
+          <div class="cloud c4"></div>
+          <div id="moonParallax">
+            <div class="moon-wrap"><div class="moon"></div></div>
+          </div>
+          <div class="fog"></div>
+        </div>
+        <div class="hero-content">
+          <svg
+            class="mark"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="var(--gold)"
+            stroke-width="1.2"
+          >
+            <path
+              d="M12 2 L13.2 9.5 L21 12 L13.2 14.5 L12 22 L10.8 14.5 L3 12 L10.8 9.5 Z"
+            />
+          </svg>
+          <h1 data-en="WANDS!" data-fa="!WANDS">WANDS!</h1>
+          <p
+            class="tagline"
+            data-en="CRAFTED WITH MAGIC"
+            data-fa="ساخته‌ شده با جادو"
+          >
+            CRAFTED WITH MAGIC
+          </p>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="eyebrow reveal" data-en="WHO WE ARE" data-fa="ما کی هستیم">
+          WHO WE ARE
+        </div>
+        <h2
+          data-en="Engineering, with a little enchantment"
+          data-fa="مهندسی، با کمی جادو"
+          class="reveal"
+        >
+          Engineering, with a little enchantment
+        </h2>
+        <p
+          class="reveal"
+          data-en="WANDS is a small studio building web experiences that feel alive — clean code underneath, a touch of magic on the surface. We design, build, and ship real products for real people."
+          data-fa="WANDS یک استودیوی کوچک است که تجربه‌های وب زنده می‌سازد — کدنویسی تمیز در زیر، لمسی از جادو در سطح. ما محصولات واقعی برای افراد واقعی طراحی و می‌سازیم."
+        >
+          WANDS is a small studio building web experiences that feel alive —
+          clean code underneath, a touch of magic on the surface. We design,
+          build, and ship real products for real people.
+        </p>
+      </section>
+
+      <section class="section" id="team">
+        <div
+          class="eyebrow"
+          style="text-align: center"
+          data-en="OUR COVEN"
+          data-fa="محفل ما"
+        >
+          OUR COVEN
+        </div>
+        <h2 style="text-align: center" data-en="Team" data-fa="تیم">Team</h2>
+        <div class="grid">
+          <div class="card reveal">
+            <div class="avatar"></div>
+            <h3>Artin</h3>
+            <div class="role" data-en="FULL STACK DEVELOPER" data-fa="فول استک">
+              FULL STACK DEVELOPER
+            </div>
+            <div
+              class="stack"
+              data-en="Python · Django · Frontend · Ai Engineer"
+              data-fa="پایتون · جنگو · فرانت اند · مهندس هوش مصنوعی"
+            >
+              Python · Django · Frontend · Ai Engineer
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="avatar"></div>
+            <h3>User 1</h3>
+            <div class="role" data-en="DESIGNER" data-fa="طراح">DESIGNER</div>
+            <div
+              class="stack"
+              data-en="UI/UX · Motion"
+              data-fa="  موشن · طراحی/روابط کاربری "
+            >
+              UI/UX · Motion
+            </div>
+          </div>
+          <div class="card reveal">
+            <div class="avatar"></div>
+            <h3>—</h3>
+            <div class="role">ROLE</div>
+            <div class="stack">Stack</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div
+          class="eyebrow"
+          style="text-align: center"
+          data-en="SELECTED WORK"
+          data-fa="کار های منتخب"
+        >
+          SELECTED WORK
+        </div>
+        <h2 style="text-align: center" data-en="Projects" data-fa="پروژه ها">
+          Projects
+        </h2>
+        <div class="grid">
+          <div class="proj-card reveal">
+            <div class="proj-thumb reveal"><img src="/pct/cafe.png" alt=""></div>
+            <div class="proj-body reveal">
+              <h3>Nova Cafe</h3>
+              <div class="proj-tags">DJANGO · PYTHON · CSS</div>
+              <p>A magical digital experience for a local cafe brand.</p>
+              <a class="view-link" href="https:cafe-fwct.onrender.com"
+                >View project</a
+              >
+            </div>
+          </div>
+          <div class="proj-card reveal">
+            <div class="proj-thumb reveal"><img src="/pct/test.png" alt=""></div>
+            <div class="proj-body reveal">
+              <h3>Test</h3>
+              <div class="proj-tags">WEB · UI</div>
+              <p>Protfolio website.</p>
+              <a
+                class="view-link"
+                href="https://endjackcho.github.io/test-project"
+                >View project</a
+              >
+            </div>
+          </div>
+          <div class="proj-card reveal">
+            <div class="proj-thumb reveal"></div>
+            <div class="proj-body reveal">
+              <h3>Project Three</h3>
+              <div class="proj-tags">AI · BACKEND</div>
+              <p>Placeholder description for a third project.</p>
+              <a class="view-link" href="#">View project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="logo">WANDS</div>
+        <p>© 2026 WANDS Studio — Crafted with magic.</p>
+      </footer>
+
+      <a href="#top" class="to-top" id="toTop">↑</a>
+    </div>
+
+    <script>
+      const starsEl = document.getElementById("stars");
+      const n = window.innerWidth < 600 ? 50 : 100;
+      let html = "";
+      for (let i = 0; i < n; i++) {
+        const x = Math.random() * 100,
+          y = Math.random() * 70,
+          s = Math.random() * 1.6 + 1;
+        const d = Math.random() * 4,
+          dur = 3 + Math.random() * 4;
+        html += `<div class="star" style="left:${x}%;top:${y}%;width:${s}px;height:${s}px;animation-delay:${d}s;animation-duration:${dur}s;"></div>`;
+      }
+      starsEl.innerHTML = html;
+
+      const toTop = document.getElementById("toTop");
+      window.addEventListener("scroll", () => {
+        toTop.classList.toggle("show", window.scrollY > 400);
+      });
+
+      // theme toggle (dark/light) with golden sweep transition
+      const themeBtn = document.getElementById("themeBtn");
+      const sweep = document.getElementById("sweep");
+      function applyTheme(mode) {
+        document.body.classList.toggle("light", mode === "light");
+        themeBtn.textContent = mode === "light" ? "☀️" : "🌙";
+      }
+      function runSweep(cb) {
+        sweep.classList.remove("run");
+        void sweep.offsetWidth;
+        sweep.classList.add("run");
+        setTimeout(cb, 380);
+      }
+      let currentTheme = localStorage.getItem("wands-theme") || "dark";
+      applyTheme(currentTheme);
+      themeBtn.addEventListener("click", () => {
+        runSweep(() => {
+          currentTheme = currentTheme === "dark" ? "light" : "dark";
+          localStorage.setItem("wands-theme", currentTheme);
+          applyTheme(currentTheme);
+        });
+      });
+
+      // language toggle (EN/FA) with RTL switch
+      const langBtn = document.getElementById("langBtn");
+      const trans = document.querySelector(".language-transition");
+      function applyLang(lang) {
+        document.body.setAttribute("dir", lang === "fa" ? "rtl" : "ltr");
+        document.documentElement.setAttribute("lang", lang);
+        document.querySelectorAll("[data-en]").forEach((el) => {
+          el.textContent =
+            lang === "fa"
+              ? el.getAttribute("data-fa")
+              : el.getAttribute("data-en");
+        });
+        langBtn.textContent = lang === "fa" ? "EN / FA" : "FA / EN";
+      }
+
+      function rmve(){
+        setTimeout(() => {
+          trans.classList.remove("active")
+        }, 600);
+      }
+      
+      function rung(){
+          setTimeout(() => {
+            localStorage.setItem("wands-lang", currentLang);
+            applyLang(currentLang);
+          }, 300);
+      }
+
+      let currentLang = localStorage.getItem("wands-lang") || "en";
+      applyLang(currentLang);
+      langBtn.addEventListener("click", () => {
+        currentLang = currentLang === "en" ? "fa" : "en";
+        trans.classList.add("active");
+        rung()
+        rmve()
+      });
+
+      // 3D-feel parallax: sky layer tilts, moon drifts opposite to clouds
+      const skyLayers = document.getElementById("skyLayers");
+      const moonWrap = document.getElementById("moonParallax");
+      if (window.matchMedia("(pointer: fine)").matches) {
+        let tx = 0,
+          ty = 0,
+          cx = 0,
+          cy = 0;
+        window.addEventListener("mousemove", (e) => {
+          tx = e.clientX / window.innerWidth - 0.5;
+          ty = e.clientY / window.innerHeight - 0.5;
+        });
+        function raf() {
+          cx += (tx - cx) * 0.05;
+          cy += (ty - cy) * 0.05;
+          skyLayers.style.transform = `rotateY(${cx * 4}deg) rotateX(${
+            -cy * 3
+          }deg) scale(1.04)`;
+          moonWrap.style.transform = `translate(${cx * -24}px, ${cy * -14}px)`;
+          requestAnimationFrame(raf);
+        }
+        raf();
+      }
+
+      const cards = document.querySelectorAll(".card");
+
+      cards.forEach((card) => {
+        card.addEventListener("mousemove", (e) => {
+          const rect = card.getBoundingClientRect();
+
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+
+          card.style.setProperty("--x", `${x}px`);
+          card.style.setProperty("--y", `${y}px`);
+        });
+      });
+
+      const reveals = document.querySelectorAll(".reveal");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("active");
+            }
+          });
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      reveals.forEach((item) => {
+        observer.observe(item);
+      });
+    </script>
+  </body>
+</html>
