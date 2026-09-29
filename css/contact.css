@@ -21,6 +21,11 @@ body{
   transition:background .6s ease, color .6s ease;
 }
 
+.count{
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
 body.light{
   --night-1:#f6f1e6;--night-2:#fffaf0;--purple:#e4d9bf;
   --gold:#a8790c;--cream:#2d1b4e;--mist:#8b7fae;
