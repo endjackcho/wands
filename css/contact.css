@@ -302,7 +302,9 @@ footer nav a:hover{opacity:1;color:var(--gold);}
     #name-email{
       max-width: none;
     }
-    .input-wrap{
-      font-size: 16px;
+    .input-wrap input,
+    .input-wrap select,
+    .textarea-wrap textarea {
+        font-size: 16px;
     }
   }
