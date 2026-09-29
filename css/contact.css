@@ -13,7 +13,6 @@
 html{scroll-padding-top:env(safe-area-inset-top,0px);}
 
 body{
-  min-height:100%;
   background:radial-gradient(ellipse at 50% 0%, var(--night-2) 0%, var(--night-1) 55%, #05061a 100%);
   color:var(--cream);
   font-family:'Inter',sans-serif;
